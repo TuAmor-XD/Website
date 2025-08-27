@@ -1,10 +1,9 @@
-/* Skill bar animations */
 .skills .box .percent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: maroon;
-    width: 0; /* start at 0 */
-    transition: width 1s ease-in-out; /* smooth transition */
+    width: 0; 
+    transition: width 3s ease-in-out;
 }
