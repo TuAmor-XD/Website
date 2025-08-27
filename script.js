@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const skills = [
-        { selector: ".computer", values: [30, 80] }, // 2022 = 30%, 2023 = 80%
-        { selector: ".html", values: [20, 70] },
-        { selector: ".css", values: [10, 60] },
-        { selector: ".cpp", values: [15, 65] },
-        { selector: ".office", values: [25, 75] },
-        { selector: ".bilingual", values: [40, 90] },
-        { selector: ".typing", values: [20, 85] }
+        { selector: ".computer", values: [70, 80, 95] }, // 2022 = 30%, 2023 = 80%
+        { selector: ".html", values: [20, 66, 86] },
+        { selector: ".css", values: [10, 43, 60] },
+        { selector: ".cpp", values: [15, 60, 89] },
+        { selector: ".office", values: [85, 95, 98] },
+        { selector: ".bilingual", values: [89, 90, 95] },
+        { selector: ".typing", values: [80, 95, 98] }
     ];
 
     let yearIndex = 0;
