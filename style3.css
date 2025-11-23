@@ -1,53 +1,103 @@
-body{
+
+body {
     margin: 0;
     padding: 0;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-  }
-  .box{
-    width: 450px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
+    background: url(images/car.jpg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+}
+
+
+.about-card {
+    width: 380px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.12);
     text-align: center;
-    margin: auto;
-    margin-top: 5%;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* PROFILE PIC */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid rgba(255,255,255,0.3);
+    transition: transform 0.4s;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+/* TEXT */
+h1 {
+    font-size: 26px;
     color: white;
-    font-family: 'Century Gothic',sans-serif;
-  }
-  .box-img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-  .box h1{
-    font-size: 40px;
-    letter-spacing: 4px;
-    font-weight: 100;
-  }
-  .box h5{
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 100;
-  }
-  .box p{
-    text-align: justify;
-  }
-  ul{
-    margin: 0;
-    padding: 0;
-  }
-  .box li{
-    display: inline-block;
-    margin: 6px;
-    list-style: none;
-  }
-  .box li a{
-    color: blue;
-    text-decoration: none;
-    font-size: 60px;
-    transition: all ease-in-out 250ms;
-  }
-  .box li a:hover{
-    color: #b9b9b9;
-  }
-  
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+p {
+    color: #f0f0f0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* SOCIAL ICONS */
+.socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.icon i {
+    font-size: 28px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* HOVER COLORS */
+.fb i:hover {
+    color: #1877f2;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #1877f2;
+}
+
+.git i:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #ffffff;
+}
+
+.ig i:hover {
+    color: #ff0080;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #ff0080;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
